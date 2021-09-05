@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+#body {
+background-color: #FFF5E2;
+}
+
+.no_borders {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* / COMMON */
+
+/* header */
+
+header{
+    height: 100px;
+    position: relative;
+    background-color: #FDBB40;
+}
+
+header::after {
+    position: absolute;
+    top: -10px;
+    right: -100px;
+    content: url(../img/burger-top.png);
+}
+
+/* / header */
+
+/* main */
+
+#wrapper {
+    width: 55%;
+}
+
+#main_menu {
+    height: calc(100vh - 200px);
+}
+
+#burger_name {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #D33359;
+    font-weight: bold;
+}
+
+#burger_name:focus {
+    background-color: #FFF5E2;
+}
+
+.list_imgs {
+    width: 5vw;
+}
+
+.ingredients_lists {
+    margin: 20px 0;
+}
+
+#list_right {
+    margin-left: 15vw;
+}
+
+.ingredient input[type="checkbox"]:checked + span::before {
+    position: absolute;
+    top: -5px;
+    left: -1px ;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    z-index: 1;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ingredient .checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+.ingredient .checkbox input[type="checkbox"]{
+    visibility: hidden;
+}
+
+.ingredient .checkbox span {
+    position: relative;
+    color: #D33359;
+    padding-left: 30px;
+}
+
+.ingredient .checkbox span::after{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-60%);
+    width: 16px;
+    height: 16px;
+    background-color: #D33359;
+}
+
+#coupon {
+    background-color: #FFF5E2;
+    width: 65%;
+    margin: 0 0 15px 15px;
+}
+
+#coupon:focus {
+    background-color: #FDBB40;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#prize_btn {
+    background-color: #FDBB40;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+/* / main */
+
+/* footer */
+
+#down_bar {
+    height: 100px;
+    background-color: #D33359;
+}
+
+/* / footer */
